@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full sm:w-1/2 rounded-lg bg-emerald-800 p-8 shadow-lg">
+          <div className="w-full sm:w-1/2 rounded-lg bg-indigo-800 p-8 shadow-lg">
             <div className="animate-on-view opacity-0 translate-y-6 transition-all duration-700 sm:pl-8">
               <h1 className="text-4xl font-extrabold leading-tight text-white">
                 Simplifying GST & Corporate Compliance with Precision
@@ -102,19 +102,19 @@ export default function Home() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <button
                   onClick={() => scrollTo("contact")}
-                  className="inline-flex items-center gap-2 rounded-md bg-emerald-600 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95"
+                  className="inline-flex items-center gap-2 rounded-md border border-white bg-indigo-500 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95"
                 >
                   Book Consultation
                 </button>
                 <button
                   onClick={() => (window.location = "tel:+911234567890")}
-                  className="inline-flex items-center gap-2 rounded-md border border-emerald-600 bg-emerald-600 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95"
+                  className="inline-flex items-center gap-2 rounded-md border border-white bg-indigo-500 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95"
                 >
                   Talk to an Expert
                 </button>
               </div>
 
-              <div className="mt-6 rounded-lg bg-emerald-800 p-3">
+              <div className="mt-6 border border-white rounded-lg bg-indigo-500 p-3">
                 <div className="text-3xl font-extrabold text-white">Renu Sehgal</div>
                 <div className="mt-1 text-base text-white">Senior GST Practitioner & Compliance Advisor</div>
                 <div className="mt-3 text-sm text-white">5+ years experience • Trusted by 100+ clients</div>
@@ -125,12 +125,12 @@ export default function Home() {
 
         {/* Services */}
         <section id="services" className="mb-12">
-          <h3 className="mb-6 text-2xl font-semibold text-emerald-800">Our Services</h3>
+          <h3 className="mb-6 text-2xl font-semibold text-indigo-800">Our Services</h3>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <div
                 key={s.title}
-                className="animate-on-view opacity-0 translate-y-6 transition-all duration-700 rounded-xl border border-emerald-800 bg-emerald-800 p-6 shadow-md"
+                className="animate-on-view opacity-0 translate-y-6 transition-all duration-200 rounded-xl border border-indigo-800 bg-indigo-800 p-6 shadow-md"
               >
                 <h4 className="mb-2 text-lg font-semibold text-white">{s.title}</h4>
                 <p className="text-sm text-white">{s.desc}</p>
@@ -141,7 +141,7 @@ export default function Home() {
 
         {/* Credibility */}
         <section className="mb-12">
-          <div className="flex flex-col items-center gap-6 rounded-2xl border border-emerald-800 bg-emerald-800 p-6 shadow-sm sm:flex-row sm:justify-between">
+          <div className="flex flex-col items-center gap-6 rounded-2xl border border-indigo-800 bg-indigo-800 p-6 shadow-sm sm:flex-row sm:justify-between">
             <div className="text-center sm:text-left">
                 <div className="text-3xl font-extrabold text-white">5+</div>
               <div className="text-sm text-white">Years Experience</div>
@@ -159,9 +159,9 @@ export default function Home() {
 
         {/* Testimonials */}
         <section className="mb-12">
-          <h3 className="mb-6 text-2xl font-semibold text-emerald-800">What Clients Say</h3>
+          <h3 className="mb-6 text-2xl font-semibold text-indigo-800">What Clients Say</h3>
           <div className="relative">
-            <div className="rounded-xl border border-emerald-800 bg-emerald-800 p-6 shadow-md">
+            <div className="rounded-xl border border-indigo-800 bg-indigo-800 p-6 shadow-md">
               <div className="min-h-[120px]">
                 <p className="mb-4 text-lg text-white">"{testimonials[index].quote}"</p>
                 <div className="text-sm text-white  ">— {testimonials[index].name}, {testimonials[index].company}</div>
@@ -174,10 +174,10 @@ export default function Home() {
               </button>
               <div className="flex gap-2">
                 {testimonials.map((_, i) => (
-                  <button key={i} onClick={() => setIndex(i)} className={`h-2 w-8 rounded-full ${i === index ? "bg-teal-500" : "bg-teal-300"}`}></button>
+                  <button key={i} onClick={() => setIndex(i)} className={`h-2 w-8 rounded-full ${i === index ? "bg-indigo-500" : "bg-indigo-300"}`}></button>
                 ))}
               </div>
-              <button onClick={() => setIndex((i) => (i + 1) % testimonials.length)} className="rounded-full bg-teal-500 p-2 shadow">
+              <button onClick={() => setIndex((i) => (i + 1) % testimonials.length)} className="rounded-full bg-indigo-500 p-2 shadow">
                 ›
               </button>
             </div>
@@ -185,11 +185,11 @@ export default function Home() {
         </section>
 
         {/* Contact quick section */}
-        <section id="contact" className="mb-12 rounded-xl border border-emerald-800 bg-emerald-800 p-6 shadow-sm">
+        <section id="contact" className="mb-12 rounded-xl border border-indigo-800 bg-indigo-800 p-6 shadow-sm">
           <h3 className="mb-3 text-xl font-semibold text-white">Ready to simplify compliance?</h3>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a href="mailto:contact@renusehgalco.com" className="inline-flex items-center gap-2 rounded-md bg-emerald-600 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95">Book Consultation</a>
-            <a href="tel:+911234567890" className="inline-flex items-center gap-2 rounded-md border border-emerald-600 bg-emerald-600 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95  ">Talk to an Expert</a>
+            <a href="mailto:contact@renusehgalco.com" className="inline-flex items-center gap-2 rounded-md bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95">Book Consultation</a>
+            <a href="tel:+911234567890" className="inline-flex items-center gap-2 rounded-md border border-indigo-600 bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-md hover:brightness-95  ">Talk to an Expert</a>
             <div className="ml-auto text-sm text-white">Or email us at <a className="text-white" href="mailto:contact@renusehgalco.com">contact@renusehgalco.com</a></div>
           </div>
         </section>
