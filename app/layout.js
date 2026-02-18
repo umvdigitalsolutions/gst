@@ -26,9 +26,11 @@ export default function RootLayout({ children }) {
         <div className="min-h-screen flex flex-col bg-gradient-to-r from-slate-100 via-white-300 to-slate-100">
           <Header />
 
-            <div className="mx-auto mt-[64px] px-6 py-10 with-watermark text-black rounded-2xl">
+          <main className="flex-1">
+            <div className="mx-auto max-w-6xl mt-[64px] px-6 py-10 with-watermark text-black rounded-2xl">
               {children}
               </div>
+          </main>
 
           <Footer />
         </div>
